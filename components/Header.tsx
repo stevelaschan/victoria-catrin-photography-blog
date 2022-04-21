@@ -45,7 +45,7 @@ type CartItems = {
 export default function Header() {
   return (
     <header css={headerStyle}>
-      <div css={logoStyle}>Victoria Catrin Photography</div>
+      {/* <div css={logoStyle}>Victoria Catrin Photography</div> */}
       <Link href="/">
         <a>Home</a>
       </Link>

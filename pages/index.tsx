@@ -3,6 +3,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
+import { css } from '@emotion/react';
+
+const containerStyle = css`
+  margin-top: 18px;
+`;
 
 const Home: NextPage = () => {
   return (
