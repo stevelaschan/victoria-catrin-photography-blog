@@ -4,8 +4,13 @@ import styles from '../styles/Home.module.css';
 import { css } from '@emotion/react';
 
 const textStyle = css`
+  display: flex;
+
+  img {
+    margin: 28px;
+  }
   p {
-    margin: 8px 32px;
+    margin: 28px;
   }
 `;
 
@@ -13,13 +18,14 @@ export default function About() {
   return (
     <Layout>
       <Head>
-        <title>About</title>
+        <title>About Me</title>
         <meta name="description" content="Home" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <h1>About me</h1>
         <div css={textStyle}>
+          <img src="../aboutmepic.png" alt="aboutmepic" height="300" />
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text

@@ -9,6 +9,19 @@ const containerStyle = css`
   margin-top: 18px;
 `;
 
+const mainHeader = css`
+  margin: 400px 48px;
+`;
+
+const picCategories = css`
+  display: flex;
+  margin: 18px;
+`;
+
+const pics = css`
+  margin: 18px;
+`;
+
 const Home: NextPage = () => {
   return (
     <Layout>
@@ -20,7 +33,16 @@ const Home: NextPage = () => {
         </Head>
 
         <main className={styles.main}>
-          <h1>Welcome to Victoria Catrin Photography</h1>
+          <h1 css={mainHeader}>Welcome to Victoria Catrin Photography</h1>
+          <div css={picCategories}>
+            <img src="../profile.png" alt="profile" height="500" css={pics} />
+            <img
+              src="../landscape.png"
+              alt="landscape"
+              height="500"
+              css={pics}
+            />
+          </div>
         </main>
 
         <footer className={styles.footer}>
